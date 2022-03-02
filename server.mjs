@@ -7,7 +7,7 @@ const sessionClient = new dialogflow.SessionsClient();
 const app = express();
 app.use(cors())
 app.use(express.json())
-app.use('/', express.static(path.join(__dirname, 'web/build')))
+
 
 
 const PORT = process.env.PORT || 7001;
